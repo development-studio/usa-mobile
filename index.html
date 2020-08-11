@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <script src="./assets/js/jquery/jquery-3.3.1.js"></script>
+    <title>USA Role Play: Главная</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-logo">
+                <a href="/">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <a href="">Главная</a>
+                <a href="https://vk.com/usarp_mobile"><img src="./assets/images/vk.png" alt=""></a>
+                <a href="https://forum.usa-rp.su">Форум</a>
+                <a href="donate.php" class="button">Донат</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="head">
+            <div class="head-bl">
+                <div class="head-l">
+                    <div class="head-content">
+                        <div class="head-title">
+                            <h1>Добро пожаловать на USA MOBILE</h1>
+                        </div>
+                        <p>
+                            Это увлекательный проект сетевой игры
+                            <br>
+                            GTA San Andreas.
+                            <br>
+                            Присоединяйся к нам прямо сейчас!
+                        </p>
+                        <button class="button" id="js_play-btn">Начать играть</button>
+                    </div>
+                </div>
+                <div class="head-r">
+                    <img src="./assets/images/head-image.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="play" id="play">
+            <div class="play-bl">
+                <div class="play-title">
+                    <section>
+                        <h2>Как начать играть?</h2>
+                        <p>
+                            Для того, чтобы начать играть в SAMP
+                            <br>
+                            нужно выполнить 3 простых шага:
+                        </p>
+                    </section>
+                </div>
+                <div class="play-items">
+                    <div class="play-items_bl">
+                        <div class="play-item">
+                            <span>1</span>
+                            <section>
+                                <p>Скачать и распаковать кэш игры GTA: SAN ANDREAS</p>
+                                <a href="https://vk.cc/ajP9tn" class="button">Скачать</a>
+                            </section>
+                        </div>
+                        <div class="play-item">
+                            <span>2</span>
+                            <section>
+                                <p>Скачать и установить клиент USA MOBILE</p>
+                                <a href="https://yadi.sk/d/IUgEUXHrNpZLqg" class="button">Скачать</a>
+                            </section>
+                        </div>
+                        <div class="play-item">
+                            <span>3</span>
+                            <section>
+                                <p>Начните игру прямо сейчас!</p>
+                                <a href="samp://46.174.49.224:7777" class="button">Начать</a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="vk">
+            <div class="vk-bl">
+                <div class="vk-l">
+                    <a href="https://vk.com/usarp_mobile">
+                        <img src="./assets/images/vk-logo.png" alt="">
+                        <section>
+                            <h2>Мы ВКонтакте</h2>
+                            <p>Официальная страница</p>
+                        </section>
+                    </a>
+                </div>
+                <div class="vk-r">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-l">
+                <p><b>(C) 2020 USA ROLEPLAY</b></p>
+                <p>Все права защищены.</p>
+                <p>Любое копирование запрещено!</p>
+            </div>
+            <div class="footer-r">
+                <a href="https://vk.me/donald_online">- Помощь</a>
+                <a href="https://vk.com/usarp_mobileh">- ВКонтакте</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/menu.js"></script>
+    <script>
+        $('#js_play-btn').click(() => {
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $("#play").offset().top + 150
+            }, 500);
+        });
+    </script>
+</body>
+</html>
